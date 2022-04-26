@@ -21,11 +21,17 @@ X a
 Y b
 ```
 
-After you compiled the .java file you can simply run it via
+Il suffit d'éxécuter le CYK.java en lui passant en paramètre le fichier de grammaire ainsi que la phrase à analyser. 
 
 ```
-java CYK <fichier> <phrase>
+java CYK.java <fichier> <phrase>
 ```
+
+Exemple : 
+```
+java CYK.java java CYK.java grammaire.txt ab
+```
+
 
 Cette simple grammaire avec le mot ab génère en sortie :
 ```
