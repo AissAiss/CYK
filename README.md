@@ -8,18 +8,7 @@ L'algorithme opère par analyse ascendante et emploie la programmation dynamique
 
 Source : https://fr.wikipedia.org/wiki/Algorithme_de_Cocke-Younger-Kasami 
 
-## Structure du fichier de grammaire
-
-Un fichier de grammaire est structuré ainsi : 
-
-```
-S                             -> Symbole de départ
-a b                           -> Symboles terminaux
-S X Y                         -> Symboles non-terminaux
-S XY                          -> toutes les lignes suivante sont des règles de génération
-X a
-Y b
-```
+## Éxécution 
 
 Il suffit d'éxécuter le CYK.java en lui passant en paramètre le fichier de grammaire ainsi que la phrase à analyser. 
 
@@ -31,7 +20,6 @@ Exemple :
 ```
 java CYK.java java CYK.java grammaire.txt ab
 ```
-
 
 Cette simple grammaire avec le mot ab génère en sortie :
 ```
@@ -56,9 +44,24 @@ CYK :
 +-----+
 ```
 
+## Structure du fichier de grammaire
+
+Un fichier de grammaire est structuré ainsi : 
+
+```
+S                             -> Symbole de départ
+a b                           -> Symboles terminaux
+S X Y                         -> Symboles non-terminaux
+S XY                          -> toutes les lignes suivante sont des règles de génération
+X a
+Y b
+```
+
 ## Exemple issu des TDs
 
 Dans cette parti nous allons utiliser l'algorithme avec des phrases en français et une grammaire plus complex. 
+
+### Le petit garçon lit des livres.
 
 ```
 $ java CYK.java exercice1.txt le petit garçon lit des livres
@@ -97,6 +100,8 @@ CYK :
 | PHRASE       |
 +--------------+
 ```
+
+### Le lit du garçon est petit.
 
 ```
 $ java CYK.java exercice1.txt le lit du garçon est petit
