@@ -10,7 +10,7 @@ Source : https://fr.wikipedia.org/wiki/Algorithme_de_Cocke-Younger-Kasami
 
 ## Éxécution 
 
-Il suffit d'éxécuter le CYK.java en lui passant en paramètre le fichier de grammaire ainsi que la phrase à analyser. 
+Il suffit d'éxécuter le fichier CYK.java en lui passant en paramètre le fichier de grammaire ainsi que la phrase à analyser. 
 
 ```
 java CYK.java <fichier> <phrase>
