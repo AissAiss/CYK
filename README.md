@@ -2,9 +2,9 @@
 
 ## Implementation en Java
 
-En informatique théorique et en théorie des langages, l'algorithme de Cocke-Younger-Kasami (CYK) est un algorithme d'analyse syntaxique pour les grammaires non contextuelles, publié par Itiroo Sakai en 19611,2. Il permet de déterminer si un mot est engendré par une grammaire, et si oui, d'en donner un arbre syntaxique. L'algorithme est nommé d'après les trois personnes qui l'ont redécouvert indépendamment, J. Cocke, dont l'article n'a jamais été publié3, D. H. Younger4 et T. Kasami qui a publié un rapport interne aux US-AirForce5.
+En informatique théorique et en théorie des langages, l'algorithme de Cocke-Younger-Kasami (CYK) est un algorithme d'analyse syntaxique pour les grammaires non contextuelles, publié par Itiroo Sakai en 1961. Il permet de déterminer si un mot est engendré par une grammaire, et si oui, d'en donner un arbre syntaxique. L'algorithme est nommé d'après les trois personnes qui l'ont redécouvert indépendamment, J. Cocke, dont l'article n'a jamais été publié, D. H. Younger et T. Kasami qui a publié un rapport interne aux US-AirForce.
 
-L'algorithme opère par analyse ascendante et emploie la programmation dynamique. L'algorithme suppose que la grammaire est en forme normale de Chomsky. Cette restriction n'est pas gênante dans la mesure où toute grammaire non contextuelle admet une grammaire en forme normale de Chomsky équivalente6. Le temps de calcul de cet algorithme est en {\displaystyle O(|m|^{3}\cdot |G|)}{\displaystyle O(|m|^{3}\cdot |G|)}, où {\displaystyle |m|}{\displaystyle |m|} est la longueur du mot {\displaystyle m}m à analyser et {\displaystyle |G|}|G| est la taille de la grammaire.
+L'algorithme opère par analyse ascendante et emploie la programmation dynamique. L'algorithme suppose que la grammaire est en forme normale de Chomsky. Cette restriction n'est pas gênante dans la mesure où toute grammaire non contextuelle admet une grammaire en forme normale de Chomsky équivalente. Le temps de calcul de cet algorithme est en O(|m|^{3}*|G| )}), où {\displaystyle |m|}{\displaystyle |m|} est la longueur du mot m à analyser et G est la taille de la grammaire.
 
 Source : https://fr.wikipedia.org/wiki/Algorithme_de_Cocke-Younger-Kasami 
 
